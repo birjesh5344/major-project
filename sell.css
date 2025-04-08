@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,100;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background-color: #f4f7f6; /* Light grey background */
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 15px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+nav:hover {
+    background-color: #f1f1f1; /* Light background on hover */
+}
+
+nav .nav__logo {
+    width: 40px;
+}
+
+h1 {
+    font-size: 32px;
+    color: #2b3e4b;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.sell_container {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    color: #2b3e4b;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sell_container:hover {
+    background-color: #f9f9f9; /* Light grey on hover */
+    transform: scale(1.02); /* Slight scaling effect */
+}
+
+.sell__inputs {
+    width: 100%;
+}
+
+.sell_container input,
+.sell_container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid #ccd6e0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+.sell_container input:focus,
+.sell_container textarea:focus {
+    border: 1px solid #2b3e4b;
+    background-color: #ffffff;
+}
+
+.sell_container input:hover,
+.sell_container textarea:hover {
+    background-color: #e8f0fe; /* Light blue background on hover */
+}
+
+.sell__inputs label {
+    font-size: 16px;
+    color: #606060;
+    margin: 10px 0;
+}
+
+.sell__inputs hr {
+    width: 100%;
+    margin: 20px 0;
+    border-top: 1px solid #e0e0e0;
+}
+
+.sell__inputs h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.condition {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.sell__inputs .condition button {
+    padding: 12px 20px;
+    background-color: #2b3e4b;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sell__inputs .condition button:hover {
+    background-color: #1c2b34; /* Darker on hover */
+    transform: scale(1.05); /* Slight scaling effect */
+}
+
+#btnSubmit {
+    padding: 15px 30px;
+    background-color: #2b3e4b;
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#btnSubmit:hover {
+    background-color: #1c2b34; /* Darker background on hover */
+    transform: scale(1.05); /* Slight scaling effect */
+}
+
+.profileName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.profileName input {
+    width: 100% !important;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccd6e0;
+    margin-left: 20px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+.profileName img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.input {
+    width: 100%;
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sell_container {
+        width: 95%;
+    }
+
+    .condition {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    #btnSubmit {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}

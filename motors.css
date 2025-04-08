@@ -1,0 +1,143 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Navbar Styles */
+.same__color {
+    background: #ffffff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.small__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.small__navbar_logo img {
+    height: 70px;
+    border-radius: 10px;
+}
+
+.actions__links a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.actions__links a:hover {
+    color: #007bff;
+}
+
+.second__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.second-navbar__logo img {
+    height: 100px;
+    border-radius: 10px;
+}
+
+.select_option {
+    display: flex;
+    align-items: center;
+    background: #f5f5f5;
+    padding: 8px 12px;
+    border-radius: 25px;
+}
+
+.select_option i {
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.select_option input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+}
+
+.search__bar {
+    display: flex;
+    align-items: center;
+    background: #f5f5f5;
+    padding: 8px 12px;
+    border-radius: 25px;
+    width: 50%;
+}
+
+.search__bar input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+    flex: 1;
+}
+
+.search__bar i {
+    color: #007bff;
+    cursor: pointer;
+}
+
+.login__sell {
+    display: flex;
+    align-items: center;
+}
+
+.login__btn, .sell__btn {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-left: 10px;
+    /*transition: background 0.3s ease;*/
+}
+
+.login__btn:hover, .sell__btn:hover {
+    background: #0056b3;
+}
+
+/* Third Navbar */
+.third__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.select__itself a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.links button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16 
+}

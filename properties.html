@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties - Houses, Apartments & Plots</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Reuse the same navbar and footer from index.html -->
+    <div class="same__color">
+        <div class="small__navbar">
+            <div class="small__navbar_logo">
+                <!--<img src="images/bktsimple.png" alt=" " height="70">-->
+            </div>
+            <div class="actions__links">
+                <a href="motors.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="88.9" height="33" alt="OLX Motors" class="_1a6eed8f">
+                        <!-- SVG code for motors icon -->
+                    </svg>
+                </a>
+                <a href="properties.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="97.25" height="33" alt=" Property" class="_1a6eed8f">
+                        <!-- SVG code for properties icon -->
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="second__navbar">
+            <div class="second-navbar__logo">
+                <a href="./index.html">
+                    <!--<img src="images/bkt-logo.png" alt=" " height="100">-->
+                </a>
+            </div>
+            <div class="select_option">
+                <i class="fa-solid fa-location-pin"></i>
+                <input type="text" id="userLocation" placeholder="Fetching your location...">
+            </div>
+            <div class="search__bar">
+                <input type="text" id="txt" placeholder="Find Houses, Apartments, Plots and more...">
+                <i class="fa-solid fa-store"></i>
+            </div>
+            <div class="login__sell" id="login__sell">
+                <button href="" class="login__btn" onclick="openLogin()">Login</button>
+                <button onclick="sell()" class="sell__btn">+ Sell</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Third Navbar -->
+    <div class="third__navbar">
+        <div class="select__itself">
+            <a href="">All category</a>
+        </div>
+        <div class="links" id="links">
+            <!-- Links for property categories -->
+            <button onclick="filterCategory('Houses')">Houses</button>
+            <button onclick="filterCategory('Apartments')">Apartments</button>
+            <button onclick="filterCategory('Plots')">Plots</button>
+        </div>
+    </div>
+
+    <!-- Ad Section -->
+    <div class="ad">
+        <img src="./images/banner.png" alt="Properties Ad">
+    </div>
+
+    <!-- Fresh Recommendations -->
+    <div class="fresh__recomandation">
+        <h1>Fresh Recommendations for Properties</h1>
+        <div class="cards__container" id="cards">
+            <!-- Property cards will be dynamically added here -->
+        </div>
+        <div class="load__more">
+            <button class="load__more-btn">Load More</button>
+        </div>
+    </div>
+
+    <!-- Footer (Same as index.html) -->
+    <footer>
+        <div class="footer_the_app_section">
+            <img src="./images/mobile.webp" alt="">
+            <div class="footer_content">
+                <h1>Try The Our App</h1>
+                <h3>Buy, sell and find just about anything using the app on your mobile.</h3>
+            </div>
+            <div class="line"></div>
+            <div class="get__your_app_today">
+                <h4>Get Your App Today</h4>
+                <div class="apps">
+                    <img src="./images/apple.svg" alt="">
+                    <img src="./images/google.svg" alt="">
+                    <img src="./images/app_galery.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="footer__real">
+            <div class="footer__content">
+                <div class="lists">
+                    <ul>
+                        <h4>POPULAR category</h4>
+                        <li>Cars</li>
+                        <li>Flats for rent</li>
+                        <li>Mobile Phones</li>
+                        <li>Jobs</li>
+                    </ul>
+                    <ul>
+                        <h4>POPULAR category</h4>
+                        <li>Cars</li>
+                        <li>Flats for rent</li>
+                        <li>Mobile Phones</li>
+                        <li>Jobs</li>
+                    </ul>
+                    <ul>
+                        <h4>POPULAR category</h4>
+                        <li>Cars</li>
+                        <li>Flats for rent</li>
+                        <li>Mobile Phones</li>
+                        <li>Jobs</li>
+                    </ul>
+                    <ul>
+                        <h4>POPULAR category</h4>
+                        <li>Cars</li>
+                        <li>Flats for rent</li>
+                        <li>Mobile Phones</li>
+                        <li>Jobs</li>
+                    </ul>
+                </div>
+                <div class="follow_us">
+                    <h4>FOLLOW US</h4>
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="apps">
+                        <img src="./images/apple.svg" alt="">
+                        <img src="./images/google.svg" alt="">
+                        <img src="./images/app_galery.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>Free Classifieds in India . © 2024-2025 OLX</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="properties.js"></script>
+</body>
+
+</html>
